@@ -1,0 +1,30 @@
+$avatar-size: rem(100px);
+$chain-wheel-size: rem(130px);
+$chain-wheel-diff: ($chain-wheel-size - $avatar-size)/2;  
+
+
+.avatar-container {
+    position: relative;
+    
+    .avatar-image-frame {
+        position: absolute;
+        border-radius: $chain-wheel-size/2;
+        width: $chain-wheel-size;
+        height: $chain-wheel-size;     
+        // border: rem(5px) dashed white;
+        background: url('../media/chain_wheel.png');
+        background-size: 100% 100%;
+    }
+    #avatar-image {
+        position: absolute;
+        width: $avatar-size;
+        height: $avatar-size;
+        top:$chain-wheel-diff;
+        left:$chain-wheel-diff;
+        background: url('../media/profile.jpg');
+        background-size: 100% 100%;
+        border-radius: $avatar-size/2; 
+    }    
+    
+    
+} 

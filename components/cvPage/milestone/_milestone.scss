@@ -1,0 +1,46 @@
+$show-animtation-duration: 1s;
+.milestone-container {
+    position: relative;
+            
+    .milestone-pane {
+        // border: rem(1px) solid white;
+        padding: rem(40px);
+        position: absolute;
+        top: 0;
+        height: rem(530px);
+        width: rem(800px);
+        background-color: rgba(saddlebrown, 0.5);
+       // opacity: 0;
+        @include transition (all $show-animtation-duration);
+        border: rem(1px) solid white;   
+        &.show {
+            @include transition (all $show-animtation-duration);
+            background-color: rgba(saddlebrown, 1);
+            // 
+        } 
+        
+        // %text {
+        //     opacity:0;
+        //     @include transition (all 2s);
+            
+        //     &.show {
+        //         opacity: 1;
+        //     }
+        // }
+        
+        .title {
+            // font-family: comic;
+            font-size: rem(80px);
+          //  @extend %text;
+            color: white;
+        }
+         
+        .decription-bullet {
+            //@extend %text;
+            color: white;
+        }
+    }   
+    
+        
+            
+}

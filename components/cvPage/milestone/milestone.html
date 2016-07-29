@@ -1,0 +1,8 @@
+<div class="milestone-container" ng-style="getMilestoneStyle()">
+    <div class="milestone-pane" ng-class="getMilestoneStateClass()">
+        <div class="title">{{data.title}}</div>
+        <div class="decription-bullet" ng-repeat="bullet in data.description">
+            - {{bullet}}
+        </div>
+    </div>
+</div>

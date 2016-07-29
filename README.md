@@ -1,2 +1,2 @@
-# blog
-Tech, Leadership 
+# DanielLereya
+Tech, Design and Leadership Blog

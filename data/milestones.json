@@ -1,0 +1,27 @@
+{
+    "milestones": [
+        {
+            "title": "Tel Aviv University",
+            "description": [
+                "B.Sc. in Computer Science at the Blavatnik School of Computer Science – Graduated with honors (GPA 90)",
+                "B.A in Economics at the Eitan Berglas School of Economics",
+                "Honored by the faculty of Computer Science for excellent achievements during the third year of my undergraduate studies"
+            ],
+            "category": "education",
+            "startDate": "2009-10-01T10:00:00Z",
+            "endDate": "2012-10-01T10:00:00Z",
+            "showPos": 1500
+        },
+        {
+            "title": "Software Engineer at SAP",
+            "description": [
+                "Developing a cloud based platform for business web-applications development (Adobe Flex, Java, REST)",
+                "Developing a dynamically generated runtime client for business applications, running over SAP-HANA in-memory DB server (JavaScript, jQuery, HTML5)"
+            ],
+            "category": "work",
+            "startDate": "2011-02-01T10:00:00Z",
+            "endDate": "2012-10-01T10:00:00Z",
+            "showPos": 4000
+        }
+    ]
+}

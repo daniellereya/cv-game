@@ -1,0 +1,27 @@
+<div class="cv-page-container" ng-keydown="handleKeyDown($event)" ng-keyup="stopMoving()" tabindex="0">
+    <div style="color: white">{{leftCss}}</div>
+    <div class="arrow-left" ng-mousedown="move(false)" ng-mouseup="stopMoving()"></div>
+    <div class="arrow-right" ng-mousedown="move(true)" ng-mouseup="stopMoving()"></div>
+    <div class="scene" ng-style="getLeftCss()">
+        <milestone ng-repeat="milestone in milestones"
+            position-in-pixels="milestone.showPos"
+            category="milestone.category"
+            start-date="{{milestone.startDate}}"
+            end-date="{{milestone.endDate}}"
+            title="{{milestone.title}}"
+            description="milestone.description"
+            current-position="leftCss">
+        </milestone>
+
+        <!--<div class="box2">
+        </div>
+        <div class="box3">
+        </div>-->
+        <div class="box4">
+        </div>
+
+    </div>
+    <avatar rotation="leftCss">
+    </avatar>
+    
+</div>

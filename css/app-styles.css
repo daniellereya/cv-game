@@ -1,0 +1,151 @@
+.about-page-container {
+  width: 100%;
+  height: 100%;
+  background-color: #232c33; }
+  .about-page-container .about-page-header {
+    background-color: #d00000;
+    height: 120px; }
+  .about-page-container .intro-section {
+    padding-top: 20px;
+    background-color: #ffba08;
+    height: 240px; }
+    .about-page-container .intro-section .a {
+      min-height: 150px;
+      background-color: green; }
+    .about-page-container .intro-section .b {
+      min-height: 150px;
+      background-color: navy; }
+      .about-page-container .intro-section .b #cv-canvas {
+        width: 100%;
+        height: 100%;
+        border: 1px solid red; }
+    .about-page-container .intro-section .c {
+      min-height: 150px;
+      background-color: black; }
+
+.cv-page-container {
+  width: 100%;
+  height: 100%;
+  background-color: #232c33;
+  overflow: hidden; }
+  .cv-page-container .arrow-right, .cv-page-container .arrow-left {
+    position: absolute;
+    border-top: 1.5625rem solid transparent;
+    border-bottom: 1.5625rem solid transparent;
+    cursor: pointer; }
+  .cv-page-container .arrow-right {
+    right: 1.875rem;
+    width: 0;
+    height: 0;
+    border-left: 1.5625rem solid rgba(32, 178, 170, 0.6);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    .cv-page-container .arrow-right:hover {
+      border-left: 1.5625rem solid lightseagreen;
+      -webkit-transform-origin: center center;
+      -moz-transform-origin: center center;
+      -ms-transform-origin: center center;
+      -o-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); }
+  .cv-page-container .arrow-left {
+    left: 1.875rem;
+    width: 0;
+    height: 0;
+    border-right: 1.5625rem solid rgba(32, 178, 170, 0.6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s; }
+    .cv-page-container .arrow-left:hover {
+      border-right: 1.5625rem solid lightseagreen;
+      -webkit-transform-origin: center center;
+      -moz-transform-origin: center center;
+      -ms-transform-origin: center center;
+      -o-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); }
+  .cv-page-container .scene {
+    position: relative;
+    top: -webkit-calc(50% - 18.75rem);
+    top: calc(50% - 18.75rem);
+    width: 937.5rem;
+    height: 37.5rem;
+    background: url("../media/background.png");
+    background-size: 93.75rem 100%; }
+    .cv-page-container .scene .box1 {
+      position: absolute;
+      left: 200px;
+      background-color: green;
+      height: 3.125rem;
+      width: 7.5rem;
+      top: -100px;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      transition: all 2s;
+      opacity: 0; }
+      .cv-page-container .scene .box1.show {
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        transition: all 2s;
+        opacity: 1;
+        height: 3.75rem;
+        width: 8.125rem; }
+  .cv-page-container avatar {
+    position: absolute;
+    left: 9.375rem; }
+
+.avatar-container {
+  position: relative; }
+  .avatar-container .avatar-image-frame {
+    position: absolute;
+    border-radius: 4.0625rem;
+    width: 8.125rem;
+    height: 8.125rem;
+    background: url("../media/chain_wheel.png");
+    background-size: 100% 100%; }
+  .avatar-container #avatar-image {
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    top: 0.9375rem;
+    left: 0.9375rem;
+    background: url("../media/profile.jpg");
+    background-size: 100% 100%;
+    border-radius: 3.125rem; }
+
+.milestone-container {
+  position: relative; }
+  .milestone-container .milestone-pane {
+    padding: 2.5rem;
+    position: absolute;
+    top: 0;
+    height: 33.125rem;
+    width: 50rem;
+    background-color: rgba(139, 69, 19, 0.5);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    border: 0.0625rem solid white; }
+    .milestone-container .milestone-pane.show {
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+      background-color: saddlebrown; }
+    .milestone-container .milestone-pane .title {
+      font-size: 5rem;
+      color: white; }
+    .milestone-container .milestone-pane .decription-bullet {
+      color: white; }
+
+@font-face {
+  font-family: comic;
+  src: url(fonts/planetbe.ttf); }

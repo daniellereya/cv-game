@@ -1,0 +1,82 @@
+$scene-height: rem(600px);
+$arrow-size: rem(25px);
+$arrow-color: rgba(lightseagreen, 0.6);
+$arrow-color-hover: lightseagreen;
+
+.cv-page-container {
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(35,44,51);
+    overflow: hidden; 
+    
+    %arrow {
+        position: absolute;
+        border-top: $arrow-size solid transparent;
+        border-bottom: $arrow-size solid transparent;
+        cursor: pointer;
+    }
+    
+    .arrow-right {
+        @extend %arrow;
+        right: rem(30px);
+        width: 0; 
+        height: 0; 
+        border-left: $arrow-size solid $arrow-color;
+        @include transition(all 0.5s ease-in-out);
+        &:hover {
+            border-left: $arrow-size solid $arrow-color-hover;
+            @include transform-origin(center center);
+            @include transform(scale(1.3));
+        }
+    }
+
+    .arrow-left {
+        @extend %arrow;
+        left: rem(30px);
+        width: 0; 
+        height: 0; 
+        border-right:$arrow-size solid $arrow-color;
+        @include transition(all 0.5s);
+        &:hover {
+            border-right: $arrow-size solid $arrow-color-hover;
+            @include transform-origin(center center);
+            @include transform(scale(1.3));
+        } 
+    }
+
+    .scene {
+        position: relative;
+        @include calc(top, "50% - #{$scene-height/2}");
+        width: rem(15000px);
+        height: $scene-height;
+        background: url('../media/background.png');
+        background-size: rem(1500px) 100%;
+        
+        
+        .box1 {
+            position: absolute;
+            left: 200px;
+            background-color: green;
+            height: rem(50px);
+            width: rem(120px);
+            top: -100px;
+            @include transition (all 2s);
+            opacity: 0;
+            
+            &.show {
+                @include transition (all 2s);
+                opacity: 1;
+                height: rem(60px);
+                width: rem(130px);
+            }
+        }
+    }
+    
+    avatar {
+        position: absolute;
+        //@include calc(top, "50%");
+        //top: rem(34px);
+        left: rem(150px);
+    }
+
+}

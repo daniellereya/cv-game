@@ -1,0 +1,19 @@
+// Bourbon
+@import "styles/bourbon/bourbon";
+
+// General Styles
+@import "styles/_components-styles.scss";
+@import "styles/_theme.scss";
+
+// Components Styles
+@import "components/aboutPage/_aboutPage.scss"; 
+@import "components/cvPage/_cvPage.scss";
+@import "components/cvPage/avatar/_avatar.scss";
+@import "components/cvPage/milestone/_milestone.scss";
+
+
+// fonts
+@font-face {
+    font-family: comic;
+    src: url(fonts/planetbe.ttf);
+}
